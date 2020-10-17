@@ -14,11 +14,11 @@ class Machine
     @order
   end
 
-def register(product_params)
-  product_params.each do |param|
-    @products << Product.new(param)
+  def register(product_params)
+    product_params.each do |param|
+      @products << Product.new(param)
+    end
   end
-end
 
   def show
     puts "セブン自販機へようこそ"
