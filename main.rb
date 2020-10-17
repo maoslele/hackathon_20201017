@@ -10,8 +10,8 @@ class Machine
   def initialize(product_params)
     @products = []
     register(product_params)
-    @got_money
-    @order
+    @got_money = 0
+    @order = 0
   end
 
   def register(product_params)
